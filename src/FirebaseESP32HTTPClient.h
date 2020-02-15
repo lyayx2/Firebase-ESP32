@@ -30,8 +30,10 @@
  *
 */
 
-#ifndef FirebaseESP32HTTPClient_H_
-#define FirebaseESP32HTTPClient_H_
+#ifndef FirebaseESP32HTTPClient_H
+#define FirebaseESP32HTTPClient_H
+
+#ifdef ESP32
 
 #include <Arduino.h>
 #include <HTTPClient.h>
@@ -109,4 +111,6 @@ protected:
   uint16_t _port = 0;
 };
 
-#endif /* FirebaseESP32HTTPClient_H_ */
+#endif /* ESP32 */
+
+#endif /* FirebaseESP32HTTPClient_H */

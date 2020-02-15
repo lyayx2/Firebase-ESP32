@@ -41,6 +41,8 @@
 #ifndef FirebaseESP32_H
 #define FirebaseESP32_H
 
+#ifdef ESP32
+
 #include <Arduino.h>
 #include <WiFi.h>
 #include "FS.h"
@@ -2949,4 +2951,6 @@ protected:
 
 extern FirebaseESP32 Firebase;
 
-#endif
+#endif /* ESP32 */
+
+#endif /* FirebaseESP32_H */

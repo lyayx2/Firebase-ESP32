@@ -41,6 +41,8 @@
 #ifndef FirebaseESP32_CPP
 #define FirebaseESP32_CPP
 
+#ifdef ESP32
+
 #include "FirebaseESP32.h"
 
 struct FirebaseESP32::FirebaseDataType
@@ -6751,4 +6753,6 @@ void FCMObject::clear()
 
 FirebaseESP32 Firebase = FirebaseESP32();
 
-#endif
+#endif /* ESP32 */
+
+#endif /* FirebaseESP32_CPP */
